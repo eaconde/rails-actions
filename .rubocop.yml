@@ -4,12 +4,17 @@ require:
   - rubocop-performance
   - rubocop-rails
 
+inherit_mode:
+  merge:
+    - Exclude
+
 AllCops:
   DisplayCopNames: true
 
   Exclude:
     - 'bin/*'
     - db/schema.rb
+    - vendor/bundle/**/*
 
 Style/Documentation:
   Enabled: false
