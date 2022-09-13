@@ -1,6 +1,13 @@
+require: 
+  - rubocop-performance
+  - rubocop-rails
+
 AllCops:
+  DisplayCopNames: true
+
   Exclude:
     - 'bin/*'
+    - db/schema.rb
 
 Style/Documentation:
   Enabled: false
@@ -8,3 +15,11 @@ Layout/LineLength:
   Max: 120
 Metrics/MethodLength:
   Max: 20
+  Exclude:
+    - test/**/*
+
+Rails:
+  Enabled: true
+
+Rails/FilePath:
+  Enabled: false

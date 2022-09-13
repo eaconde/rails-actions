@@ -48,6 +48,8 @@ group :development do
   gem 'brakeman'
   gem 'bundler-audit'
   gem 'rubocop'
+  gem 'rubocop-performance'
+  gem 'rubocop-rails'
 end
 
 group :test do
