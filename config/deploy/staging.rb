@@ -1,4 +1,7 @@
 # frozen_string_literal: true
+
+set :rails_env, 'staging'
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -54,3 +57,5 @@
 #     auth_methods: %w(publickey password)
 #     # password: "please use keys"
 #   }
+
+set :deploy_to, "/var/www/sites/staging.#{application}"

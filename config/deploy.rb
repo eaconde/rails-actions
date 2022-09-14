@@ -3,6 +3,9 @@
 # config valid for current version and patch releases of Capistrano
 lock '~> 3.17.1'
 
+set :stages, %w(production staging)
+set :default_stage, "production"
+
 set :application, 'rails-actions'
 set :repo_url, 'git@github.com:eaconde/rails-actions.git'
 
@@ -10,6 +13,7 @@ set :rvm_ruby_version, 'ruby-2.7.3'
 set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 
 # Default branch is :master
+set :branch, 'main'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
@@ -23,7 +27,7 @@ set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 # set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
 
 # Default value for :pty is false
-# set :pty, true
+set :pty, true
 
 # Default value for :linked_files is []
 # append :linked_files, "config/database.yml", 'config/master.key'

@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+set :rails_env, 'production'
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -57,3 +59,5 @@
 #   }
 
 server '34.217.124.247', user: 'ubuntu', roles: %w[app db web]
+
+set :deploy_to, "/var/www/sites/#{application}"
