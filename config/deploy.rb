@@ -6,8 +6,8 @@ lock '~> 3.17.1'
 set :application, 'rails-actions'
 set :repo_url, 'git@github.com:eaconde/rails-actions.git'
 
-set :rvm_ruby_version, "ruby-2.7.3"
-set :default_env, { rvm_bin_path: "~/.rvm/bin" }
+set :rvm_ruby_version, 'ruby-2.7.3'
+set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp

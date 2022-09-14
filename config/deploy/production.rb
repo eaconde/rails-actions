@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -55,4 +56,4 @@
 #     # password: "please use keys"
 #   }
 
-server "34.217.124.247", user: "ubuntu", roles: %w{app db web}
+server '34.217.124.247', user: 'ubuntu', roles: %w[app db web]
