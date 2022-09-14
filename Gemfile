@@ -60,11 +60,12 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 end
-
+gem 'bcrypt_pbkdf', require: false
 gem 'capistrano', '~> 3.10', require: false
 gem 'capistrano-rails', '~> 1.3', require: false
 gem 'capistrano-rvm'
 gem 'capistrano-secrets-yml'
+gem 'ed25519', require: false
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
