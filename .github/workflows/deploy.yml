@@ -16,5 +16,5 @@ jobs:
         bundler-cache: true 
     - uses: miloserdow/capistrano-deploy@master
       with:
-        target: development 
+        target: production 
         deploy_key: ${{ secrets.K1_DEPLOY_PWD }} 
