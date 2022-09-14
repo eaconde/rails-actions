@@ -60,4 +60,4 @@ set :rails_env, 'production'
 
 server '34.217.124.247', user: 'ubuntu', roles: %w[app db web]
 
-set :deploy_to, "/var/www/sites/#{application}"
+# set :deploy_to, "/var/www/sites/#{application}"

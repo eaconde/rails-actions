@@ -58,4 +58,4 @@ set :rails_env, 'staging'
 #     # password: "please use keys"
 #   }
 
-set :deploy_to, "/var/www/sites/staging.#{application}"
+# set :deploy_to, "/var/www/sites/staging.#{application}"
