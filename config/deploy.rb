@@ -3,8 +3,7 @@
 # config valid for current version and patch releases of Capistrano
 lock '~> 3.17.1'
 
-set :stages, %w(production staging)
-set :default_stage, "production"
+set :stage, :production
 
 set :application, 'rails-actions'
 set :repo_url, 'git@github.com:eaconde/rails-actions.git'
