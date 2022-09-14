@@ -5,7 +5,7 @@ lock '~> 3.17.1'
 
 set :stage, :production
 
-set :application, 'rails-actions'
+set :application, 'actions'
 set :repo_url, 'git@github.com:eaconde/rails-actions.git'
 
 set :rvm_ruby_version, 'ruby-2.7.3'
