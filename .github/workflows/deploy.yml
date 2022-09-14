@@ -17,4 +17,5 @@ jobs:
     - uses: miloserdow/capistrano-deploy@master
       with:
         target: production 
+        working-directory: '/var/www/sites/'
         deploy_key: ${{ secrets.K1_DEPLOY_PWD }} 
